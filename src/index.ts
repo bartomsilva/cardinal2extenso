@@ -4,6 +4,8 @@ import { unit } from "./rooles/unit"
 import { ten } from "./rooles/ten"
 import { hundred } from "./rooles/hundred"
 import { thousand } from "./rooles/thousand"
+import { checkValues } from "./rooles/checkvalues"
+import { tHundred } from "./constants/constants"
 
 const PORT = process.env.PORT  || 5000
 
@@ -13,32 +15,36 @@ server.use(cors())
 
 server.listen(PORT, ()=>console.log("server on in port",PORT))
 
+server.get("/",(req:Request, res:Response)=>{
+  try {
+    res.send("no final digite uma / e informe um valor entre (0 e 99999) para converter em extensso.")
+    
+  } catch (error) {
+    res.send(error)
+  }
+  
+})
 server.get("/:number",(req:Request, res:Response)=>{
   try {
     
     const cNumber:string = req.params.number
-    
-    // unit / unidades
-    if(cNumber.length===1){
-      res.json(unit(cNumber))
+    if(isNaN(parseInt(cNumber))) {
+      res.statusCode=400
+      throw new Error("você forneceu um valor inválido")
     }
     
-    // ten / dezenas
-    if(cNumber.length===2){
-      res.json(ten(cNumber))
-    }
-
-    // hundred / centenas
-    if(cNumber.length===3){
-      res.json(hundred(cNumber))
-    }
-
-    if(cNumber.length>=4 && cNumber.length <=6){
-      res.json(thousand(cNumber))
-    }
+    const result = checkValues(cNumber)
+    res.json(result)
     
   } catch (error) {
-    res.send(error)
+    if (res.statusCode === 200) {
+      res.status(500)
+    }
+    if (error instanceof Error) {
+      res.send(error.message)
+    } else {
+      res.send("Erro inesperado.")
+    }
   }
   
 })
