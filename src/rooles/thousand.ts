@@ -1,6 +1,7 @@
 import { unit } from "./unit";
 import { ten } from "./ten";
 import { hundred } from "./hundred";
+import { checkValues } from "./checkvalues";
 
 export function thousand(value: string): string {
 
@@ -30,25 +31,24 @@ export function thousand(value: string): string {
       if (secondNumber == '0' || secondNumber + thirdNumber == '00') {
         result += 'e '
       }
-      result += otherValues(secondNumber + thirdNumber + fourthNumber)
+      result += checkValues(secondNumber + thirdNumber + fourthNumber)
     }
   }
-  return result
-}
+  if (len == 5) {
 
-// trabalhas as unidades, dezenas e centenas
+    result = ten(firstNumber+secondNumber)+ ' mil '
 
-function otherValues(checkNumber: string): string {
+    if( fourthNumber + fifthNumber =='00' || thirdNumber=='0' ){
+      if (thirdNumber+fourthNumber+fifthNumber !== '000'){
+        result += 'e '
+      } 
+    }
 
-  const newValue = parseInt(checkNumber)
-  let result: string = ""
-
-  if (newValue < 10) {
-    result += unit(newValue.toString())
-  } else if (newValue < 100) {
-    result += ten(newValue.toString())
-  } else {
-    result += hundred(newValue.toString())
+    result += checkValues(thirdNumber + fourthNumber + fifthNumber )
+   
   }
   return result
 }
+
+// trabalha as unidades, dezenas e centenas
+
