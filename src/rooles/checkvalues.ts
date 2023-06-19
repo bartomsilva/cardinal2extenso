@@ -21,5 +21,6 @@ export function checkValues(checkNumber: string): string {
   } else if (newValue < 100000){
     result = thousand(newValue.toString())
   }
+  result = result.replace("e zero","")
   return result
 }
