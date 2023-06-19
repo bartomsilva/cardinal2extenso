@@ -17,7 +17,7 @@ server.listen(PORT, ()=>console.log("server on in port",PORT))
 
 server.get("/",(req:Request, res:Response)=>{
   try {
-    res.send("no final digite uma / e informe um valor entre (0 e 99999) para converter em extensso.")
+    res.send("no final digite uma / e informe um valor entre (0 e 99999) para converter em extenso.")
     
   } catch (error) {
     res.send(error)

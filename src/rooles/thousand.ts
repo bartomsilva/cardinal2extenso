@@ -2,6 +2,7 @@ import { unit } from "./unit";
 import { ten } from "./ten";
 import { hundred } from "./hundred";
 import { checkValues } from "./checkvalues";
+import { tHundred } from "../constants/constants";
 
 export function thousand(value: string): string {
 
@@ -35,19 +36,27 @@ export function thousand(value: string): string {
       result += checkValues(secondNumber + thirdNumber + fourthNumber)
     }
   }
+
   if (len == 5) {
-
     result = ten(firstNumber+secondNumber)+ ' mil '
-
     if( fourthNumber + fifthNumber =='00' || thirdNumber=='0' ){
       if (thirdNumber+fourthNumber+fifthNumber !== '000'){
         result += 'e '
       } 
     }
-
     result += checkValues(thirdNumber + fourthNumber + fifthNumber )
-   
   }
+  if (len == 6) {
+    const newValue = parseInt(firstNumber+"00") 
+    result = tHundred[newValue] 
+    // if( fourthNumber + fifthNumber =='00' || thirdNumber=='0' ){
+    //   if (thirdNumber+fourthNumber+fifthNumber !== '000'){
+    //     result += 'e '
+    //   } 
+    // }
+    result += checkValues(secondNumber + thirdNumber + fourthNumber + fifthNumber )
+  }
+
   return result
 }
 
