@@ -12,7 +12,7 @@ export function hundred(value: string): string {
   const thirdNumber: string = value[2]
 
   // obs: quanto ao 100 (cem assume cento quando é composto )
-  if (value.includes('00')) {
+  if (firstNumber=='1' && value.includes('00')) {
     return "cem"
   }
 

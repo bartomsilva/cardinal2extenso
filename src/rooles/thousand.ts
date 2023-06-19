@@ -27,8 +27,9 @@ export function thousand(value: string): string {
     } else {
       result = 'mil '
     }
+
     if (secondNumber + thirdNumber + fourthNumber !== '000') {
-      if (secondNumber == '0' || secondNumber + thirdNumber == '00') {
+      if (secondNumber == '0' || thirdNumber+fourthNumber == '00') {
         result += 'e '
       }
       result += checkValues(secondNumber + thirdNumber + fourthNumber)
