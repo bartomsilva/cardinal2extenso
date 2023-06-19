@@ -13,7 +13,7 @@
 ### uso direto no navegador
 ![image](https://github.com/bartomsilva/decimal2extenso/assets/106079184/2f3fbcf7-a7d7-4211-9954-590e4a9a54c2)
 
-### chamando com axios 
+### uso com axios 
 ![image](https://github.com/bartomsilva/decimal2extenso/assets/106079184/56079029-cd0c-4e99-abd4-41ab4821044e)
 
 
