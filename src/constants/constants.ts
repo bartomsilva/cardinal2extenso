@@ -1,6 +1,6 @@
 
-// TABLE UNIT / TABELA UNIDADE
-export const tUnit:{ [key: number]:string} =
+// TABLE VALUE / TABELA VALOR
+export const tValue:{ [key: number]:string} =
 {
   0: "zero" ,
   1: "um" ,
@@ -11,12 +11,7 @@ export const tUnit:{ [key: number]:string} =
   6: "seis",
   7: "sete",
   8: "oito",
-  9: "nove"
-}
-
-// TABLE TEN / TABELA DEZENA
-export const tTen:{ [key: number]:string} =
-{
+  9: "nove",
   10: "dez" ,
   11: "onze" ,
   12: "doze",
@@ -34,12 +29,7 @@ export const tTen:{ [key: number]:string} =
   60: "sessenta",
   70: "setenta",
   80: "oitenta",
-  90: "noventa"
-}
-
-// TABLE HUNDRED / TABELA CENTENA
-export const tHundred:{ [key: number]:string} =
-{
+  90: "noventa",
   100: "cento",
   200: "duzentos",
   300: "trezentos",
@@ -48,6 +38,6 @@ export const tHundred:{ [key: number]:string} =
   600: "seiscentos",
   700: "setecentos",
   800: "oitocentos",
-  900: "novecentos",
+  900: "novecentos"
 } 
 

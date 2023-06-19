@@ -1,7 +1,7 @@
 import { unit } from "./unit"
 import { ten } from "./ten"
 import { hundred } from "./hundred"
-import { thousand } from "./thousand"
+import { thousand } from "./thousandOne"
 
 export function checkValues(checkNumber: string): string {
 

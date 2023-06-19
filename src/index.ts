@@ -1,11 +1,6 @@
 import express, {Request, Response} from "express"
 import cors  from "cors"
-import { unit } from "./rooles/unit"
-import { ten } from "./rooles/ten"
-import { hundred } from "./rooles/hundred"
-import { thousand } from "./rooles/thousand"
 import { checkValues } from "./rooles/checkvalues"
-import { tHundred } from "./constants/constants"
 
 const PORT = process.env.PORT  || 5000
 

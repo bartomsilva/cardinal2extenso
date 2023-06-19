@@ -1,4 +1,4 @@
-import { tHundred } from "../constants/constants";
+import { tValue } from "../constants/constants";
 import { unit } from "./unit";
 import { ten } from "./ten";
 
@@ -17,7 +17,7 @@ export function hundred(value: string): string {
   }
 
   // pega o base das centenas
-  result = tHundred[parseInt(firstNumber + '00')] + ' e '
+  result = tValue[parseInt(firstNumber + '00')] + ' e '
   newValue = parseInt(secondNumber + thirdNumber)
  
   if (newValue < 10) {
