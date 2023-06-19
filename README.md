@@ -3,8 +3,10 @@
 <p>O decimal2extenso é uma API, cujo objetivo é praticar os conceitos de back-end.</p>
 
 ## O que ela faz?
-
-- recebe um valor decimal de 0 a 99999 e converte para seu valor em extensso.
+```bash
+ recebe um valor decimal de 0 a 999999 ( zero a novecentos e noventa e nove mil ),
+ e converte para seu valor em extensso.
+```
 
 <hr/>
 
