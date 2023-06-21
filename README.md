@@ -4,7 +4,7 @@
 
 ## O que ela faz?
 ```bash
- recebe um valor decimal de 0 a 999999 ( zero a novecentos e noventa e nove mil ),
+ recebe um valor decimal de 0 a 999999999 ( zero a novecentos e noventa milhões... ),
  e converte para seu valor em extensso.
 ```
 
