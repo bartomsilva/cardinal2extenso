@@ -16,6 +16,7 @@
 ![image](https://github.com/bartomsilva/cardinal2extenso/assets/106079184/abe9ff4a-b893-4e55-ae02-50dde87a2832)
 
 ### uso com axios 
+![image](https://github.com/bartomsilva/cardinal2extenso/assets/106079184/452a2d71-0e78-482f-82e2-bee0e103071d)
 
 
 <span id='funcionalidades'></span>
