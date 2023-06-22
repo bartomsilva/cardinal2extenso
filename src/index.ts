@@ -12,7 +12,7 @@ server.listen(PORT, () => console.log("server on in port", PORT))
 
 server.get("/", (req: Request, res: Response) => {
   try {
-    res.send("decimal2extenso online.")
+    res.send("cardinal2extenso online.")
 
   } catch (error) {
     res.send(error)

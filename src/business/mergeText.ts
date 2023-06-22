@@ -30,16 +30,14 @@ export function mergeText(result: string, textMillion: string,
       result += addText('mil', result)
       if (!textHundred.includes("cento")) {
         result += addText('e', result)
+
       } else if (textHundred.includes('centos')) {
         result += addText('e', result)
       }
     }
 
-  } else {
-    if (textMillion) {
-      result += addText('e', result)
-    }
-  }
+  } 
+
   result += textHundred
   return result
 }
