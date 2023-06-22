@@ -40,7 +40,11 @@ export function checkValues(value: string): string {
       rest = tValue[parseInt(value[1])]
     }
     // o rest se for zero é descartado
+    // if (rest !== 'zero' && rest.length>0 ){
+    //     result += ' e '+rest
+    // }
     result += rest !== 'zero' ? " e " + rest : ""
+
   }
   return result
 }

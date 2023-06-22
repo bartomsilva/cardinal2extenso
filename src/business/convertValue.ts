@@ -1,6 +1,7 @@
 import  { Request, Response } from 'express'
 import { checkValues } from './checkvalues'
 import { mergeText } from './mergeText'
+import { spellChecker } from './spellChecker'
 
 export function convertValue(req: Request, res: Response) {
   try {
@@ -36,10 +37,11 @@ export function convertValue(req: Request, res: Response) {
     result = mergeText(result, textMillion, textThosand, textHundred)
 
     // correção ortográfica ( cento e mil )
-
+    result = spellChecker(result.trim())
+    
     //================================
 
-    res.json(result.trim())
+    res.json(result)
 
   } catch (error) {
     if (res.statusCode === 200) {
