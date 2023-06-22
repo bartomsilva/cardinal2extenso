@@ -1,10 +1,10 @@
-# decimal2extenso
+# cardinal2extenso
 
-<p>O decimal2extenso é uma API, cujo objetivo é praticar os conceitos de back-end.</p>
+<p>O cardinal2extenso é uma API, cujo objetivo é praticar os conceitos de back-end.</p>
 
 ## O que ela faz?
 ```bash
- recebe um valor decimal de 1 a 999999999 ( um a novecentos e noventa milhões... ),
+ recebe um valor cardinal de 1 a 999999999 ( um a novecentos e noventa milhões... ),
  e converte para seu valor em extensso.
 ```
 
@@ -13,23 +13,22 @@
 ## Imagens
 
 ### uso direto no navegador
-![image](https://github.com/bartomsilva/decimal2extenso/assets/106079184/2f3fbcf7-a7d7-4211-9954-590e4a9a54c2)
+
 
 ### uso com axios 
-![image](https://github.com/bartomsilva/decimal2extenso/assets/106079184/56079029-cd0c-4e99-abd4-41ab4821044e)
 
 
 <span id='funcionalidades'></span>
 ## ⚒ Fucionalidades do Projeto
 
-O Projeto decimal2extenso apesar do seu funcionamento ser bem simples, requer sólidos conceitos de programação para aplicar as condições necessáiras
+O Projeto cardinal2extenso apesar do seu funcionamento ser bem simples, requer sólidos conceitos de programação para aplicar as condições necessáiras
 e montar uma lógica que permita tal conversão de forma coerente.
 
 <hr/>
 
 <span id="link"></span>  
 ## 🔗 Demonstração<br/>
-[Link do projeto!](https://decimal2extenso.bartomsilva.repl.co/2023).
+[Link do projeto!]().
 
 <br/>
 <span id='comorodar'></span>
@@ -48,7 +47,7 @@ e montar uma lógica que permita tal conversão de forma coerente.
 
 # Copie o link a baixo
 
-https://github.com/bartomsilva/decimal2extenso.git
+https://github.com/bartomsilva/cardinal2extenso.git
   
 # Abra um terminal e digite o seguinte comando
 
@@ -56,7 +55,7 @@ git clone (cole a url aqui)
 
 # acesse a página criada 
 
-cd decimal2extenso
+cd cardinal2extenso
 
 # Instale as dependências
 yarn install
