@@ -22,7 +22,7 @@
 <span id='funcionalidades'></span>
 ## ⚒ Fucionalidades do Projeto
 
-O Projeto cardinal2extenso apesar do seu funcionamento ser bem simples, requer sólidos conceitos de programação para aplicar as condições necessáiras
+O Projeto cardinal2extenso apesar do seu funcionamento ser bem simples, requer sólidos conceitos de programação para aplicar as condições necessárias
 e montar uma lógica que permita tal conversão de forma coerente.
 
 <hr/>
