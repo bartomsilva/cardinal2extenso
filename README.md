@@ -29,7 +29,7 @@ e montar uma lógica que permita tal conversão de forma coerente.
 
 <span id="link"></span>  
 ## 🔗 Demonstração<br/>
-[Link do projeto!](https://cardinal2extenso.bartomsilva.repl.co/2023).
+[Link do projeto!]([https://cardinal2extenso.bartomsilva.repl.co/](https://61cf5ae9-c691-454c-894a-b526425dff22-00-181tdy0slvzqt.kirk.replit.dev/2023).
 
 <br/>
 <span id='comorodar'></span>
